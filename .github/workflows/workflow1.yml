@@ -1,0 +1,12 @@
+#.github/workflows/workflow1.yml
+name: workflow1
+on :
+  push
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps :
+    - name : checkout
+      uses : actions/checkout@v2.0
+    - run : time
+    
