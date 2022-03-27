@@ -22,8 +22,7 @@ jobs:
     - run : date
   job4:
     runs-on: ubuntu-latest
-    depends:
-      needs : [job1,job2,job3]
+    needs : [job1,job2,job3]
     steps :
 #     - name : checkout
 #       uses : actions/checkout@v2.0.0
